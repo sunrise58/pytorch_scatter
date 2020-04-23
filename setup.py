@@ -46,7 +46,7 @@ def get_extensions():
             sources += [path]
 
         extension = Extension(
-            'torch_scatter._' + name,
+            'torch_scatter2._' + name,
             sources,
             include_dirs=[extensions_dir],
             define_macros=define_macros,
@@ -62,7 +62,7 @@ setup_requires = ['pytest-runner']
 tests_require = ['pytest', 'pytest-cov']
 
 setup(
-    name='torch_scatter',
+    name='torch_scatter2',
     version='2.0.4',
     author='Matthias Fey',
     author_email='matthias.fey@tu-dortmund.de',
